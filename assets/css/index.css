@@ -82,6 +82,117 @@ body {
 }
 
 
+
+/*For nav-sidebar*/
+.sidebar {
+    position: fixed;
+    text-align: end;
+    top: 0;
+    left: -400px;
+    height: 100%;
+    width: 300px;
+    background-color: #2C2C2C;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 100px 20px 20px 0;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: left 0.3s ease-out;
+    z-index: 1002;
+    overflow: hidden;
+}
+
+.sidebar a {
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    gap: 10px;
+    padding: 10px;
+    color: #000300;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.sidebar a:hover {
+    color: white;
+    background-color: #DAA520;
+    transform: scale(1.1);
+}
+
+/* Positioned Login Button in Sidebar */
+.sidebar .login-btn {
+    margin-top: 30px; /* Space below menu items */
+    align-self: center;
+
+}
+
+/* Toggle Button Animation */
+.toggle-btn {
+    background-color: transparent;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    cursor: pointer;
+    padding-top: 40px;
+    z-index: 1001; /* Ensure it stays above */
+    width: 60px; /* Bigger size */
+    height: 65px;
+}
+
+.toggle-btn span {
+    height: 5px; /* Bigger thickness */
+    width: 40px;
+    background-color: #DAA520;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+}
+
+/* Open Sidebar - Toggle Button Changes */
+.toggle-btn.open span:nth-child(1) { /* Top bar */
+    transform: rotate(45deg) translateY(10px);
+}
+
+.toggle-btn.open span:nth-child(2) { /* Middle bar */
+    opacity: 0; /* Hide the middle bar */
+}
+
+.toggle-btn.open span:nth-child(3) { /* Bottom bar */
+    transform: rotate(-45deg) translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu,
+    .nav-btn {
+        display: none;
+    }
+
+    .sidebar {
+        display: flex;
+    }
+
+    .toggle-btn {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) {
+    .toggle-btn {
+        display: none;
+    }
+
+    .sidebar {
+        display: none;
+    }
+}
+
+
+
 /*For hero*/
 .hero {
     width: 100%;
