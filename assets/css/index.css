@@ -9,6 +9,10 @@ body {
 
 /*For navbar*/
 .navbar {
+    position: sticky;
+    top: -50px;
+    left: 0;
+    z-index: 1000;
     width: 100%;
     margin-top: -3rem;
     display: flex;
@@ -210,11 +214,12 @@ body {
 /*For main title*/
 #hero-title {
     font-family: "Montserrat", sans-serif;
+    word-wrap: break-word;
     font-optical-sizing: auto;
     font-style: normal;
     color:#DAA520;
     margin: 0 0 40px 0;
-    padding: 0 0 10px 40px;
+    padding: 0 40px 10px 40px;
 }
 
 .main-title {
