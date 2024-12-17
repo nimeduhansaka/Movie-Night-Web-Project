@@ -437,3 +437,63 @@ body {
 .movie-div h3 {
     margin-bottom: 10px;
 }
+
+
+
+/*For infinity loop*/
+.slider-container {
+    width: 100%;
+    margin-top: 50px;
+    overflow: hidden;
+    background: #2C2C2C;
+    padding: 20px 0;
+    /*box-shadow: 0 5px 15px rgba(0,0,0,0.1);*/
+}
+
+.logo-slider {
+    display: flex;
+    animation: slide 60s linear infinite;
+}
+
+.logo-slider:hover {
+    animation-play-state: paused;
+}
+
+.logo {
+    flex: 0 0 auto;
+    width: 120px;
+    height: 70px;
+    margin: 0 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    pointer-events: none;
+    filter: grayscale(100%);
+}
+
+.logo:hover img {
+    filter: grayscale(0%);
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-70%);
+    }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        width: 100px;
+        height: 66px;
+        margin: 0 20px;
+    }
+}
