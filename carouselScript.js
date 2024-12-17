@@ -167,3 +167,53 @@ class Carousel {
 document.addEventListener('DOMContentLoaded', () => {
     new Carousel();
 });
+
+
+
+//For ratings
+const apiKey = '83d5334d';
+
+// Array of movie titles
+const movieTitles = ['Gladiator II', 'Alien Romulus', 'Silo', 'The Substance', 'Interstellar', 'Landman', 'The Penguin'];
+
+// Function to fetch and display data for six specific movies
+function fetchAndShowRatings() {
+    movieTitles.forEach((title, index) => {
+        // Target each movie's respective div by ID
+        const divId = `movie-${index + 1}`;
+        const movieDiv = document.getElementById(divId);
+
+        // Fetch movie data using OMDb API
+        fetch(`https://www.omdbapi.com/?t=${encodeURIComponent(title)}&apikey=${apiKey}`)
+            .then(response => response.json())
+            .then(data => {
+                // If the movie is found, display its data
+                if (data.Response === 'True') {
+                    const imdbRating = data.Ratings.find(rating => rating.Source === 'Internet Movie Database')?.Value || 'N/A';
+                    const rtRating = data.Ratings.find(rating => rating.Source === 'Rotten Tomatoes')?.Value || 'N/A';
+
+                    // Add movie details and ratings to the division
+                    movieDiv.innerHTML = `<h3>${data.Title} (${data.Year})</h3> <br>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/IMDB_Logo_2016.svg" alt="IMDb">
+    IMDb: ${imdbRating}
+</div> <br>
+<div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Rotten_Tomatoes.svg" width="14" height="24" alt="Rotten Tomatoes">
+    Rotten Tomatoes: ${rtRating}
+</div>
+`;
+                } else {
+                    // If movie not found, show an error message
+                    movieDiv.innerHTML = `<p>Movie "${title}" not found.</p>`;
+                }
+            })
+            .catch(error => {
+                console.error('Error fetching movie data:', error);
+                movieDiv.innerHTML = `<p>Error loading data for "${title}".</p>`;
+            });
+    });
+}
+
+// Call the function to populate the movie divs
+fetchAndShowRatings();
