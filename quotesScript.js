@@ -2,7 +2,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     const containers = document.querySelectorAll('.rectangle-container');
     let currentIndex = 0; // Start with the first container
-    const intervalTime = 25000; // Time interval between transitions (e.g., 5 seconds)
+    const intervalTime = 20000; // Time interval between transitions (e.g., 5 seconds)
 
     // Function to update the active container
     function updateActiveContainer() {
