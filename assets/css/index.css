@@ -523,7 +523,6 @@ body {
     border-radius: 20px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
-
     align-items: center;
     padding-left: 40px;
 }
@@ -545,7 +544,7 @@ body {
     font-weight: bold;
     display: flex;
     align-items: center;
-    margin: 50px 0 20px 30px;
+    margin: 80px 0 20px 30px;
 }
 
 /*Second*/
