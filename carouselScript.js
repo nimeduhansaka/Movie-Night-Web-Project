@@ -17,7 +17,7 @@ class Carousel {
         this.animationID = 0;
 
         this.autoPlayInterval = null;
-        this.autoPlayDelay = 3000; // 3 seconds
+        this.autoPlayDelay = 4000; // 3 seconds
         this.isAutoPlaying = true;
 
         this.init();
