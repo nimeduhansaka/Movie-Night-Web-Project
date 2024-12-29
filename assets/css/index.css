@@ -523,7 +523,7 @@ body {
     rgba(0, 0, 0, 0.7) 70%,
     rgba(0, 0, 0, 0) 100%
     ), url('https://v0.dev/placeholder.svg') right/contain no-repeat;
-    border-radius: 20px;
+    border-radius: 16px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: none;
     align-items: center;
