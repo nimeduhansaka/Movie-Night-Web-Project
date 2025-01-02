@@ -8,7 +8,7 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.qodo/indexes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.qodo/indexes.sqlite" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/cardslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cardslider.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,6 +113,7 @@
       <workItem from="1734877067033" duration="150000" />
       <workItem from="1734877331148" duration="654000" />
       <workItem from="1735455939683" duration="4149000" />
+      <workItem from="1735833730097" duration="2654000" />
     </task>
     <servers />
   </component>
