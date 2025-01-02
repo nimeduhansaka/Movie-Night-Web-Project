@@ -60,6 +60,7 @@
     transform: translateX(100px);
     transition: opacity 0.5s ease, transform 0.5s ease;
 }
+
 .card :hover h3 {
     color: #DAA520;
 }
