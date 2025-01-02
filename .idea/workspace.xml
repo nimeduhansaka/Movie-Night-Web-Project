@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f0862701-2f77-455e-8563-89080634e37c" name="Changes" comment="" />
+    <list default="true" id="f0862701-2f77-455e-8563-89080634e37c" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qodo/indexes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.qodo/indexes.sqlite" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/cardslider.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/cardslider.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,18 +25,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "nimeduhansaka"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;nimeduhansaka&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/nimeduhansaka/Movie-Night-Web-Project.git",
-    "accountId": "b2ccbb4a-5a45-49f9-a198-128b7b1bf8cf"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/nimeduhansaka/Movie-Night-Web-Project.git&quot;,
+    &quot;accountId&quot;: &quot;b2ccbb4a-5a45-49f9-a198-128b7b1bf8cf&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 2
 }</component>
@@ -103,7 +108,11 @@
       <workItem from="1734498685709" duration="15124000" />
       <workItem from="1734591081809" duration="4161000" />
       <workItem from="1734598112265" duration="10746000" />
-      <workItem from="1734663444807" duration="26666000" />
+      <workItem from="1734663444807" duration="27604000" />
+      <workItem from="1734723249191" duration="136000" />
+      <workItem from="1734877067033" duration="150000" />
+      <workItem from="1734877331148" duration="654000" />
+      <workItem from="1735455939683" duration="4149000" />
     </task>
     <servers />
   </component>
@@ -111,45 +120,46 @@
     <option name="version" value="3" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
+    <option name="RECENT_FILTERS">
       <map>
-        <entry key="MAIN">
+        <entry key="Branch">
           <value>
-            <State />
+            <list>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="main" />
+                </option>
+              </RecentGroup>
+              <RecentGroup>
+                <option name="FILTER_VALUES">
+                  <option value="origin/main" />
+                </option>
+              </RecentGroup>
+            </list>
           </value>
         </entry>
       </map>
     </option>
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/carousel.html</url>
-          <line>1406</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/carousel.html</url>
-          <line>1380</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/scrollbar.html</url>
-          <line>155</line>
-          <option name="timeStamp" value="6" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/scrollbar.html</url>
-          <line>174</line>
-          <option name="timeStamp" value="7" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/carousel.html</url>
-          <line>1241</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
