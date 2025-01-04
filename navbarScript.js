@@ -28,11 +28,21 @@ document.addEventListener('click', (event) => {
     }
 });
 
+
 // For color changes
-window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) { // Change 50 to the scroll position at which you want the color to change
-        navbar.classList.add('scrolled'); // Add the 'scrolled' class
+// window.addEventListener('scroll', () => {
+//     if (window.scrollY > 50) { // Change 50 to the scroll position at which you want the color to change
+//         navbar.classList.add('scrolled'); // Add the 'scrolled' class
+//     } else {
+//         navbar.classList.remove('scrolled'); // Remove the 'scrolled' class
+//     }
+// });
+
+window.addEventListener('scroll', function() {
+    const navbar = document.querySelector('.navbar');
+    if (window.scrollY > 50) { // Adjust the scroll threshold as needed
+        navbar.classList.add('scrolled');
     } else {
-        navbar.classList.remove('scrolled'); // Remove the 'scrolled' class
+        navbar.classList.remove('scrolled');
     }
 });

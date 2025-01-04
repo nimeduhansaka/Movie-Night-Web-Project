@@ -1,4 +1,8 @@
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "M PLUS Rounded 1c", sans-serif;
     padding: 0;
@@ -21,12 +25,18 @@ body {
     justify-content: space-between;
     align-items: center;
     /*border-bottom: 1px solid black;*/
+    transition: top 0.3s ease, background-color 0.3s ease; /* Add transition for top */
+    background-color: transparent;
 }
 
 /*For navbar color change*/
 .navbar.scrolled {
-    background-color: black;
-    transition: background-color 0.3s ease;
+    /*background-color: black;*/
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(44, 44, 44, 0.75);
+    /*transition: background-color 0.3s ease;*/
+    top: -35px;
 }
 
 .nav-menu {
@@ -103,7 +113,10 @@ body {
     left: -400px;
     height: 100%;
     width: 300px;
-    background-color: #2C2C2C;
+    /*background-color: #2C2C2C;*/
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(44, 44, 44, 0.75);
     color: white;
     display: flex;
     flex-direction: column;
