@@ -5,14 +5,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const movieTitles = [
         'The Boys',
         'Reacher ',
-        'Breaking Bad',
+        'Squid Game',
         'Fallout',
-        'The Office',
+        'The Devil\'s Hour',
         'Baby Reindeer',
         'The Brothers Sun',
         'Young Sheldon',
         'Secret Level',
-        'Industry'
+        'Outer Banks'
     ];
 
     const cards = document.querySelectorAll('.card-series'); // Select all pre-made cards

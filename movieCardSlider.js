@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
         'Alien: Romulus',
         'Schindler\'s List',
         'Anora',
-        'Mufasa: The Lion King',
+        'The Shadow Strays',
         'Babygirl',
         'Red One'
     ];
