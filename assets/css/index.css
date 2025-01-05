@@ -468,7 +468,7 @@ body {
 
 .logo-slider {
     display: flex;
-    animation: slide 60s linear infinite;
+    animation: slide 90s linear infinite;
 }
 
 .logo-slider:hover {
