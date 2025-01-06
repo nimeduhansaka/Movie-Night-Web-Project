@@ -173,14 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //     });
     // }
 
-    function animateCards() {
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.classList.add('visible');
-            }, index * 100);
-        });
-        updateButtonVisibility();
-    }
+    // function animateCards() {
+    //     cards.forEach((card, index) => {
+    //         setTimeout(() => {
+    //             card.classList.add('visible');
+    //         }, index * 100);
+    //     });
+    //     updateButtonVisibility();
+    // }
 
     //     // Use IntersectionObserver to trigger animation only when cardScroller is in view
     //     const observer = new IntersectionObserver(
@@ -241,4 +241,55 @@ document.addEventListener('DOMContentLoaded', () => {
     //         }
     //     });
     // });
+});
+
+
+
+//For scrolling animation
+document.addEventListener('DOMContentLoaded', () => {
+    const cardScroller = document.querySelector('.card-scroller-series');
+    const cards = document.querySelectorAll('.card-series');
+
+    // Function to animate cards
+    function animateCards() {
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 100);
+        });
+        updateButtonVisibility();
+    }
+
+    // IntersectionObserver callback
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCards();
+                observer.unobserve(entry.target); // Stop observing after animation is triggered
+            }
+        });
+    };
+
+    // Create an IntersectionObserver
+    const observerOptions = {
+        root: null, // Use the viewport as the root
+        threshold: 0.2 // Trigger when 20% of the cardScroller is visible
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Start observing the cardScroller
+    observer.observe(cardScroller);
+
+    // Function to update button visibility
+    function updateButtonVisibility() {
+        const leftButton = document.querySelector('.scroll-button2.left');
+        const rightButton = document.querySelector('.scroll-button2.right');
+        const currentCardIndex = Math.floor(cardScroller.scrollLeft / cardScroller.offsetWidth);
+        const visibleCards = Math.floor(cardScroller.offsetWidth / 270);
+
+        leftButton.style.display = currentCardIndex === 0 ? 'none' : 'flex';
+        rightButton.style.display =
+            currentCardIndex >= cards.length - visibleCards ? 'none' : 'flex';
+    }
 });
