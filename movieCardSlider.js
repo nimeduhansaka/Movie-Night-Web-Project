@@ -173,14 +173,14 @@ document.addEventListener('DOMContentLoaded', () => {
     //     });
     // }
 
-    function animateCards() {
-        cards.forEach((card, index) => {
-            setTimeout(() => {
-                card.classList.add('visible');
-            }, index * 100);
-        });
-        updateButtonVisibility();
-    }
+    // function animateCards() {
+    //     cards.forEach((card, index) => {
+    //         setTimeout(() => {
+    //             card.classList.add('visible');
+    //         }, index * 100);
+    //     });
+    //     updateButtonVisibility();
+    // }
 
 
     // Prevent global keyboard scrolling
@@ -223,4 +223,42 @@ document.addEventListener('DOMContentLoaded', () => {
     //         }
     //     });
     // });
+});
+
+
+// For animate card while scrolling
+document.addEventListener('DOMContentLoaded', () => {
+    const cardScroller = document.querySelector('.card-scroller');
+    const cards = document.querySelectorAll('.card');
+
+    // Function to animate cards
+    function animateCards() {
+        cards.forEach((card, index) => {
+            setTimeout(() => {
+                card.classList.add('visible');
+            }, index * 100);
+        });
+        updateButtonVisibility();
+    }
+
+    // IntersectionObserver callback
+    const observerCallback = (entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                animateCards();
+                observer.unobserve(entry.target); // Stop observing after animation is triggered
+            }
+        });
+    };
+
+    // Create an IntersectionObserver
+    const observerOptions = {
+        root: null, // Use the viewport as the root
+        threshold: 0.1 // Trigger when 10% of the cardScroller is visible
+    };
+
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+    // Start observing the cardScroller
+    observer.observe(cardScroller);
 });
