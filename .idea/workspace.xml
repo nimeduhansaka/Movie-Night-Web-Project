@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0862701-2f77-455e-8563-89080634e37c" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.qodo/indexes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/.qodo/indexes.sqlite" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/navbarScript.js" beforeDir="false" afterPath="$PROJECT_DIR$/navbarScript.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.qodo/indexes.sqlite" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,31 +45,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JavaScript Debug.carousel.html.executor": "Run",
-    "JavaScript Debug.index.html.executor": "Run",
-    "JavaScript Debug.loop.html.executor": "Run",
-    "JavaScript Debug.navbar.html.executor": "Run",
-    "JavaScript Debug.newscroll.html.executor": "Run",
-    "JavaScript Debug.quote.html.executor": "Run",
-    "JavaScript Debug.scroll2.html.executor": "Run",
-    "JavaScript Debug.scrollbar.html.executor": "Run",
-    "Node.js.navbarScript.js.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "last_opened_file_path": "C:/Users/Lenovo/Desktop/Projects/Movie-night",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "preferences.keymap",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JavaScript Debug.carousel.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.index.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.loop.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.navbar.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.newscroll.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.quote.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.scroll2.html.executor&quot;: &quot;Run&quot;,
+    &quot;JavaScript Debug.scrollbar.html.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.navbarScript.js.executor&quot;: &quot;Run&quot;,
+    &quot;Node.js.randomCardScript.js.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Lenovo/Desktop/Projects/Movie-night&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Lenovo\Desktop\Projects\Elearning-Project\assets\css" />
@@ -116,7 +114,14 @@
       <workItem from="1734877331148" duration="654000" />
       <workItem from="1735455939683" duration="4149000" />
       <workItem from="1735833730097" duration="4045000" />
-      <workItem from="1735993084628" duration="3806000" />
+      <workItem from="1735993084628" duration="5365000" />
+      <workItem from="1736002938773" duration="2339000" />
+      <workItem from="1736006694195" duration="541000" />
+      <workItem from="1736053143650" duration="5119000" />
+      <workItem from="1736067701779" duration="4456000" />
+      <workItem from="1736084377788" duration="2782000" />
+      <workItem from="1736133798192" duration="3757000" />
+      <workItem from="1736167372317" duration="1265000" />
     </task>
     <servers />
   </component>
