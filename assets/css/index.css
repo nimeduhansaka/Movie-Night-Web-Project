@@ -596,3 +596,173 @@ body {
 .sidekick:after {content: '\201c';}
 .sidekick cite {font-size: 50%; text-align:center; top:50%}
 .sidekick cite:before {content: ' \2015 '}
+
+
+
+/*For notify me section*/
+.notify-container{
+    /*margin-top: 30px;*/
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #000300;
+    color: #fff;
+}
+
+.notify-layout {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #000300;
+    color: #fff;
+    /*justify-content: space-around;*/
+}
+
+.notify-grow1 {
+    flex-grow: 1;
+    margin: 30px 0 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (max-width: 768px) {
+    .notify-grow1 {
+        margin-top: 15px;
+        flex-direction: column;
+    }
+}
+
+.notify-title,
+.notify-header,
+.notify-para {
+    word-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+.notify-title {
+    margin-left: 30px;
+    margin-right: 30px;
+    width: 50%;
+}
+
+.notify-header {
+    font-family: "Montserrat", sans-serif;
+    font-size: 30px;
+    color: #a6a6a6;
+}
+
+.notify-para {
+    font-family: "Montserrat", sans-serif;
+}
+
+.notify-color {
+    color: #DAA520;
+}
+
+@media (max-width: 768px) {
+    .notify-title {
+        width: 100%;
+    }
+}
+
+/*Subscribe section*/
+.input-wrapper {
+    width: fit-content;
+    height: 45px;
+    border-radius: 20px;
+    padding: 5px;
+    box-sizing: content-box;
+    display: flex;
+    align-items: end;
+    background-color: #2C2C2C;
+}
+.input-wrapper:active {
+    border: 1px solid #DAA520;
+}
+
+.icon {
+    align-self: center;
+    width: 30px;
+    fill: rgb(255, 255, 255);
+    margin-left: 8px;
+    transition: all 0.3s;
+}
+.input {
+    max-width: 250px;
+    height: 100%;
+    border: none;
+    outline: none;
+    padding-left: 15px;
+    background-color: #2C2C2C;
+    color: white;
+    font-size: 1em;
+}
+.input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #292524 inset;
+    -webkit-text-fill-color: #ffffff;
+}
+.Subscribe-btn {
+    height: 100%;
+    width: 95px;
+    border: none;
+    border-radius: 15px;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    background-color: #a6a6a6;
+    font-weight: 500;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: all 0.3s;
+}
+.arrow {
+    /* display: none; */
+    position: absolute;
+    margin-right: 150px;
+    transition: all 0.3s;
+}
+.input-wrapper:active .icon {
+    transform: scale(1.3);
+}
+.Subscribe-btn:hover {
+    color: #a6a6a6;
+}
+.Subscribe-btn:hover .arrow {
+    margin-right: 0;
+    animation: jello-vertical 0.9s both;
+    transform-origin: right;
+}
+
+@keyframes jello-vertical {
+    0% {
+        transform: scale3d(1, 1, 1);
+    }
+    30% {
+        transform: scale3d(0.75, 1.25, 1);
+    }
+    40% {
+        transform: scale3d(1.25, 0.75, 1);
+    }
+    50% {
+        transform: scale3d(0.85, 1.15, 1);
+    }
+    65% {
+        transform: scale3d(1.05, 0.95, 1);
+    }
+    75% {
+        transform: scale3d(0.95, 1.05, 1);
+    }
+    100% {
+        transform: scale3d(1, 1, 1);
+    }
+}
+.Subscribe-btn:active {
+    transform: scale(0.9);
+}
