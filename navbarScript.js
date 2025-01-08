@@ -1,3 +1,5 @@
+
+//For responsive sidebar
 const sidebar = document.getElementById('sidebar');
 const toggleBtn = document.getElementById('toggle-btn');
 const navbar = document.querySelector('.navbar');

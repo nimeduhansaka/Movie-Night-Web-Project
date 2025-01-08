@@ -105,7 +105,6 @@ body {
     color: white;
 }
 
-/* Add this to account for fixed navbar */
 [data-scroll-section]:first-of-type {
     padding-top: 110px; /* Same as navbar height */
 }
@@ -116,7 +115,7 @@ body {
 
 .navbar:not(.scroll-up) {
     opacity: 1;
-    transform: translateY(-110px); /* Hide navbar when scrolling down */
+    transform: translateY(-110px);
 }
 
 
@@ -783,9 +782,3 @@ body {
 .Subscribe-btn:active {
     transform: scale(0.9);
 }
-
-
-
-/*For scroll*/
-
-
