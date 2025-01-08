@@ -17,6 +17,9 @@
     <!--random card style sheet import-->
     <link rel="stylesheet" href="./assets/css/random.css">
 
+    <link rel="stylesheet" href="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.css">
+    <script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>
+
 
     <style>
 
@@ -34,7 +37,7 @@
 <body>
 
 <!--Navbar-->
-<div class="navbar">
+<div class="navbar" data-scroll-section data-scroll-sticky data-scroll-target="#main-container">
 <!--    logo-->
     <div class="nav-logo">
         <img src="./assets/images/Logo-final.png" width="100" height="100" alt="movie-night-logo">
@@ -76,6 +79,10 @@
 </div>
 
 
+
+<!--Main div locomotive-->
+<div id="main-container" data-scroll-container>
+<div class="full-content" data-scroll-section>
 
 <!--hero section-->
 <div class="hero">
@@ -212,7 +219,7 @@
 
 
 <!--Quotes section-->
-<h2 class="quote-title">Quotes</h2>
+<h2 class="quote-title" >Quotes</h2>
 
 <div class="quote-container">
 
@@ -826,6 +833,48 @@
 
 
 
+<!--<script src="https://unpkg.com/locomotive-scroll/dist/locomotive-scroll.min.js"></script>-->
+<script>
+    // document.addEventListener('DOMContentLoaded', function() {
+    //     const scroll = new LocomotiveScroll({
+    //         el: document.querySelector('[data-scroll-container]'),
+    //         smooth: true,
+    //         multiplier: 1,
+    //         lerp: 0.1,
+    //         reloadOnContextChange: true
+    //     });
+    //
+    //     // Handle navbar scroll state
+    //     scroll.on('scroll', (args) => {
+    //         const navbar = document.querySelector('.navbar');
+    //         if (args.scroll.y > 50) {
+    //             navbar.classList.add('scrolled');
+    //         } else {
+    //             navbar.classList.remove('scrolled');
+    //         }
+    //     });
+    //
+    //     // Update scroll on page load
+    //     window.addEventListener('load', () => {
+    //         scroll.update();
+    //     });
+    //
+    //     // Update on dynamic content changes
+    //     const observer = new MutationObserver(() => {
+    //         scroll.update();
+    //     });
+    //
+    //     observer.observe(document.body, {
+    //         childList: true,
+    //         subtree: true
+    //     });
+    // });
+
+
+
+</script>
+
+
 <!--Scripts-->
 
 <!--For carousel script-->
@@ -847,5 +896,8 @@
 <!--For random card section-->
 <script src="randomCardScript.js"></script>
 
+<!--    Locomotive div-->
+</div>
+</div>
 </body>
 </html>

@@ -13,10 +13,10 @@ body {
 
 /*For navbar*/
 .navbar {
-    position: sticky;
-    top: -35px;
+    position: fixed;
+    top: 0;
     left: 0;
-    height: 110px;
+    /*height: 110px;*/
     z-index: 1000;
     width: 100%;
     margin-top: -3rem;
@@ -27,6 +27,7 @@ body {
     /*border-bottom: 1px solid black;*/
     transition: top 0.3s ease, background-color 0.3s ease; /* Add transition for top */
     background-color: transparent;
+
 }
 
 /*For navbar color change*/
@@ -36,7 +37,8 @@ body {
     -webkit-backdrop-filter: blur(16px) saturate(180%);
     background-color: rgba(44, 44, 44, 0.75);
     /*transition: background-color 0.3s ease;*/
-    top: -35px;
+    /*top: -35px;*/
+    transform: translateY(-35px);
 }
 
 .nav-menu {
@@ -103,6 +105,19 @@ body {
     color: white;
 }
 
+/* Add this to account for fixed navbar */
+[data-scroll-section]:first-of-type {
+    padding-top: 110px; /* Same as navbar height */
+}
+.navbar.scroll-up {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.navbar:not(.scroll-up) {
+    opacity: 1;
+    transform: translateY(-110px); /* Hide navbar when scrolling down */
+}
 
 
 /*For nav-sidebar*/
@@ -602,6 +617,7 @@ body {
 /*For notify me section*/
 .notify-container{
     /*margin-top: 30px;*/
+    position: relative;
     width: 100%;
     display: flex;
     justify-content: center;
@@ -611,6 +627,7 @@ body {
 }
 
 .notify-layout {
+    position: relative;
     width: 100%;
     margin-top: 10px;
     margin-bottom: 10px;
@@ -766,3 +783,9 @@ body {
 .Subscribe-btn:active {
     transform: scale(0.9);
 }
+
+
+
+/*For scroll*/
+
+
