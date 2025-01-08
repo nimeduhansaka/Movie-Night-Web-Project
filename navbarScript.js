@@ -46,3 +46,46 @@ window.addEventListener('scroll', function() {
         navbar.classList.remove('scrolled');
     }
 });
+
+// import LocomotiveScroll from "locomotive-scroll";
+// import "locomotive-scroll/dist/locomotive-scroll.css";
+//
+// document.addEventListener('DOMContentLoaded', function() {
+//     let lastScroll = 0;
+//
+//     const scroll = new LocomotiveScroll({
+//         el: document.querySelector('[data-scroll-container]'),
+//         smooth: true,
+//         multiplier: 1,
+//         lerp: 0.1
+//     });
+//
+//     // Handle navbar scroll behavior
+//     scroll.on('scroll', (args) => {
+//         const navbar = document.querySelector('.navbar');
+//         const currentScroll = args.scroll.y;
+//
+//         // Add scrolled class for background effect
+//         if (currentScroll > 50) {
+//             navbar.classList.add('scrolled');
+//         } else {
+//             navbar.classList.remove('scrolled');
+//         }
+//
+//         // Handle scroll direction
+//         if (currentScroll < lastScroll) {
+//             // Scrolling up
+//             navbar.classList.add('scroll-up');
+//         } else {
+//             // Scrolling down
+//             navbar.classList.remove('scroll-up');
+//         }
+//
+//         lastScroll = currentScroll;
+//     });
+//
+//     // Update scroll on page load
+//     window.addEventListener('load', () => {
+//         scroll.update();
+//     });
+// });
