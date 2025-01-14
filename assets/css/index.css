@@ -572,6 +572,7 @@ body {
 .quote-title {
     font-family: "Montserrat", sans-serif;
     /*font-size: 20px;*/
+    color: #a6a6a6;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -629,7 +630,7 @@ body {
     position: relative;
     width: 100%;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 30px;
 
     display: flex;
     flex-wrap: wrap;
@@ -781,4 +782,83 @@ body {
 }
 .Subscribe-btn:active {
     transform: scale(0.9);
+}
+
+
+
+/*For trailer section*/
+.trailer-section{
+    margin: 50px 0 0 0;
+    padding: 0;
+}
+
+.scroller {
+    display: flex;
+    overflow-x: hidden;
+    padding: 20px;
+    background-color: transparent;
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    position: relative;
+    cursor: grab;
+}
+
+.scroller::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+}
+
+.scroller.active {
+    cursor: grabbing;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.movie {
+    flex: 0 0 auto;
+    width: 300px;
+    margin-right: 20px;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease, width 0.3s ease;
+}
+
+.movie.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.movie:hover {
+    width: 500px;
+}
+
+.movie iframe {
+    width: 100%;
+    height: 200px;
+    border: none;
+}
+
+.movie h3 {
+    display: none; /* Hide movie name */
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-100%); }
+}
+
+.trailer-heading {
+    font-family: "Montserrat", sans-serif;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #a6a6a6;
+}
+
+@media (max-width: 768px) {
+    .movie:hover {
+        width: 95%; /* Adjusted hover width for mobile view */
+    }
 }
