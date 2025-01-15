@@ -200,8 +200,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Initial animation
-    animateCards();
-    animateCards();
+    // animateCards();
+    // animateCards();
     updateButtonVisibility();
 
     //Accessibility: Enable keyboard navigation

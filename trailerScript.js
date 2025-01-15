@@ -89,6 +89,7 @@
 
 
 
+// For get movie trailers
 document.addEventListener('DOMContentLoaded', () => {
     const apiKey = '3a62b710766c38367116e99d75392c84';
     const movieScroller = document.getElementById('movieScroller');
@@ -208,7 +209,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 
-    // IntersectionObserver for animation
+    // For animation
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
@@ -216,7 +217,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 movies.forEach((movie, index) => {
                     setTimeout(() => {
                         movie.classList.add('visible');
-                    }, index * 100); // Delay each movie's animation by 100ms
+                    }, index * 150); // Delay each movie's animation by 100ms
                 });
                 observer.unobserve(entry.target); // Stop observing after animation is triggered
             }
