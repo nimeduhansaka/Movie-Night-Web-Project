@@ -432,7 +432,8 @@
 
 .card-more .more-text {
     opacity: 0;
-    font-size: 32px;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .card-more:hover .arrow-icon {
