@@ -893,7 +893,9 @@ body {
     width: 90%;
     height: 90%;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(16px) saturate(180%);
+    -webkit-backdrop-filter: blur(16px) saturate(180%);
+    background-color: rgba(0, 0, 0, 0.42);
     border-radius: 20px;
     overflow: hidden;
 }
@@ -937,7 +939,7 @@ body {
 
 .comment {
     font-size: 14px;
-    color: #333;
+    color: #2C2C2C;
 }
 
 .add-review-container {
@@ -988,4 +990,26 @@ body {
 .add-review-form button:hover {
     color: black;
     background-color: #a6a6a6;
+}
+
+
+
+/*For back to top arrow*/
+.arrow-section {
+    display: flex;
+    justify-content: right;
+}
+
+.animate__slideInLeft {
+    /*animation: slideInLeftFadeOut 1s ease-in-out infinite;*/
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.animate__slideInLeft:hover {
+    /*animation-play-state: paused;*/
+    animation: rotateAnimation 0.2s forwards;
+    transform: rotate(270deg) scale(1.1);
+    /*filter: drop-shadow(0 0 4px #DAA520);*/
 }
