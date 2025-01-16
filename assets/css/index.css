@@ -894,17 +894,17 @@ body {
     height: 90%;
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
 .review {
     position: absolute;
     background-color: white;
-    border-radius: 8px;
+    border-radius: 10px;
     padding: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 250px;
     transition: transform 0.3s ease;
     cursor: move;
     user-select: none;
@@ -915,7 +915,7 @@ body {
 }
 
 .stars {
-    color: #ffd700;
+    color: #DAA520;
     font-size: 18px;
     margin-bottom: 5px;
 }
