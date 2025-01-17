@@ -328,6 +328,7 @@ body {
 
 .main-title:hover .title-icon {
     filter: drop-shadow(4px 4px 15px #DAA520);
+    transform: scale(1.5);
 }
 
 
