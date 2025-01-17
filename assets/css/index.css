@@ -1000,6 +1000,11 @@ body {
     justify-content: right;
 }
 
+.footer-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 .animate__slideInLeft {
     /*animation: slideInLeftFadeOut 1s ease-in-out infinite;*/
     display: inline-block;
@@ -1012,4 +1017,132 @@ body {
     animation: rotateAnimation 0.2s forwards;
     transform: rotate(270deg) scale(1.1);
     /*filter: drop-shadow(0 0 4px #DAA520);*/
+}
+
+
+
+/*For footer*/
+.footer-section {
+    opacity: 0;
+    transform: translateY(100px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease;
+}
+
+.footer-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.footer-main-header {
+    /*margin-top: 50px;*/
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.footer-main-h2 {
+    display: flex;
+    margin-left: 30px;
+    margin-bottom: -10px;
+    margin-top: -5px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 4px;
+    cursor: pointer;
+    font-weight: 900;
+    font-size: 80px;
+    color: #DAA520;
+}
+
+.footer-date {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 30px;
+    margin-top: 20px;
+    display: flex;
+    justify-items: end;
+    align-items: end;
+}
+
+@media (max-width: 768px) {
+    .footer-content ul {
+        font-size: 15px;
+    }
+}
+
+.footer-icons {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: start;
+}
+
+/*For icons*/
+ul {
+    display: flex;
+    list-style: none;
+    padding-inline-start: 0;
+    margin-left: 30px;
+}
+
+.example-2 {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: center;
+    gap: 4px;
+    align-items: center;
+}
+
+.example-2 .icon-content {
+    margin: 0 10px;
+    position: relative;
+    filter: grayscale(100%);
+}
+
+.example-2 .icon-content:hover {
+    filter: grayscale(0%);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+.footer-content ul {
+    display: flex;
+    font-weight: bold;
+    color: #a6a6a6;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+.footer-main-h2 {
+    flex-wrap: wrap;
+    gap: 2px;
+}
+
+.footer-content ul li a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.footer-content ul li:hover{
+    cursor: pointer;
+    color: black;
+}
+
+/*For footer animation*/
+.footer-main-h2 span {
+    word-wrap: break-word;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.footer-main-h2:hover span {
+    transform: scale(1.2);
+}
+
+.footer-main-h2 span:hover {
+    transform: scale(2);
 }
