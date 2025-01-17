@@ -37,7 +37,7 @@
 <body>
 
 <!--Navbar-->
-<div class="navbar" data-scroll-section data-scroll-sticky data-scroll-target="#main-container">
+<div class="navbar" data-scroll-section data-scroll-sticky>
 <!--    logo-->
     <div class="nav-logo">
         <img src="./assets/images/Logo-final.png" width="100" height="100" alt="movie-night-logo">
@@ -45,10 +45,10 @@
 
 <!--    menu-->
     <nav class="nav-menu">
-            <a href="#">Home</a>
-            <a href="/">Category</a>
-            <a href="/">Trending</a>
-            <a href="/">About</a>
+            <a href="#" id="link-section1">Home</a>
+            <a href="#card-slider-section" id="link-section2">Trending</a>
+            <a href="/" id="link-section3">Category</a>
+            <a href="/" id="link-section4">About</a>
     </nav>
 
 <!--  login  button-->
@@ -71,8 +71,8 @@
 <div class="sidebar" id="sidebar">
 
     <a href="#">Home</a>
+    <a href="">Trending</a>
     <a href="/">Category</a>
-    <a href="/">Trending</a>
     <a href="/">About</a>
     <button class="login-btn">Login</button>
 
@@ -85,7 +85,7 @@
 <div class="full-content" data-scroll-section>
 
 <!--hero section-->
-<div class="hero">
+<div class="hero" id="hero-section">
 
     <!--main title-->
     <div class="hero-div" id="hero-title">
@@ -301,6 +301,7 @@
 
 <!-----------------Movie and Series cards start from here--------------------------------------------->
 <!--Main title-->
+    <div id="card-slider-section">
 <div class="scroller-title">
     <h5>Trending</h5>
 </div>
@@ -688,6 +689,7 @@
         </div>
 
     </div>
+    </div>
 
 
 
@@ -907,6 +909,27 @@
 
 <!--For reviews section-->
 <script src="reviewScript.js"></script>
+
+    <script>
+        // // Function to highlight the active section link
+        // function highlightActiveSection() {
+        //     const sections = document.querySelectorAll('hero-section');
+        //     const links = document.querySelectorAll('.nav-menu a');
+        //
+        //     let index = sections.length;
+        //
+        //     while (--index && window.scrollY + 50 < sections[index].offsetTop) {}
+        //
+        //     links.forEach((link) => link.classList.remove('nav-menu-active'));
+        //     links[index].classList.add('nav-menu-active');
+        // }
+        //
+        // // Add scroll event listener
+        // window.addEventListener('scroll', highlightActiveSection);
+        //
+        // // Initial highlight
+        // highlightActiveSection();
+    </script>
 
 
 <!--For locomotive div-->
