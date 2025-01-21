@@ -113,7 +113,7 @@ body {
 }
 
 [data-scroll-section]:first-of-type {
-    padding-top: 110px; /* Same as navbar height */
+    padding-top: 100px; /* Same as navbar height */
 }
 .navbar.scroll-up {
     transform: translateY(0);
@@ -242,7 +242,7 @@ body {
 
 /*For hero*/
 .hero {
-    margin-top: 10px;
+    /*margin-top: 10px;*/
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -270,6 +270,12 @@ body {
     text-align: start;
     font-size: 50px;
     font-weight: 900;
+}
+
+@media (max-width: 768px) {
+    .main-title {
+        margin-top: -10px; /* Adjusted hover width for mobile view */
+    }
 }
 
 .main-para {
