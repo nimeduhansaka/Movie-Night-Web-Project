@@ -238,7 +238,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.classList.add('visible');
             }, index * 100);
         });
-        updateButtonVisibility();
+        // updateButtonVisibility();
     }
 
     // IntersectionObserver callback
