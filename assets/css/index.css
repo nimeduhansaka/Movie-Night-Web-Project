@@ -42,7 +42,7 @@ body {
 }
 
 .nav-menu {
-    margin-top: 20px;
+    margin-top: 22px;
     align-items: center;
     display: flex;
     gap: 8px;
@@ -76,14 +76,14 @@ body {
 }
 
 .nav-logo {
-    margin-top: 20px;
+    margin-top: 22px;
     padding-top: 3rem;
     padding-left: 30px;
     cursor: pointer;
 }
 
 .nav-btn {
-    margin-top: 20px;
+    margin-top: 22px;
     padding-top: 2rem;
     padding-right: 30px;
 }
@@ -436,6 +436,13 @@ body {
     font-size: 20px;
     backdrop-filter: blur(8px);
     transition: background-color 0.3s;
+}
+
+@media (max-width: 768px) {
+    .nav-button {
+        width: 50px;
+        height: 50px;
+    }
 }
 
 .nav-button:hover {
